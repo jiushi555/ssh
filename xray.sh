@@ -31,7 +31,7 @@ checkwarp(){
 }
 
 V6_PROXY=""
-IP=$(curl -s6m8 https://ip.gs)
+IP="156.251.189.96"
 [[ "$?" != "0" ]] && IP=$(curl -s6m8 https://ip.gs) && V6_PROXY="https://gh-proxy-misakano7545.koyeb.app/"
 [[ $V6_PROXY != "" ]] && echo -e nameserver 2a01:4f8:c2c:123f::1 > /etc/resolv.conf
 
